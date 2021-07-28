@@ -1,0 +1,5 @@
+package solver.services;
+
+public enum Resource {
+	GOLD, WOOD, ORE, IRON, OIL, COLONISTS, FOOD, ENERGY, WORKER, SPACE, VISIBILITY, DAMAGE, DEFENSE, UPGRADE, LIMIT;
+}

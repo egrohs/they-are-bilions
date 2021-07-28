@@ -1,0 +1,23 @@
+#spring.profiles.active: ${EST_ENVIRONMENT:d}
+
+server:
+  port: 8080
+  servlet:
+    context-path: /trb
+#    context-parameters:
+  compression:
+    enabled: true
+    min-response-size: 1
+
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 40MB
+      max-request-size: 50MB
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
